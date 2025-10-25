@@ -1,0 +1,72 @@
+# Anki单词卡片生成器配置文件示例
+# 复制此文件为 config.yaml 并填入您的API密钥
+
+# 大模型API配置
+llm_config:
+  # 选择模型提供商：openai, anthropic, zhipuai
+  provider: "zhipuai"
+
+  # 在此处填入您的API密钥：
+  # - 智谱AI: https://open.bigmodel.cn/ 获取API密钥
+  # - OpenAI: https://platform.openai.com/api-keys 获取API密钥
+  # - Anthropic: https://console.anthropic.com/settings/keys 获取API密钥
+  api_key: "请在此处填入您的API密钥"
+
+  # 模型选择：
+  # - 智谱AI: glm-4, glm-4-air, glm-3-turbo
+  # - OpenAI: gpt-4, gpt-4-turbo, gpt-3.5-turbo
+  # - Anthropic: claude-3-sonnet-20240229, claude-3-opus-20240229
+  model: "glm-4"
+
+  # API配置（智谱AI用户请保持此设置）
+  base_url: "https://open.bigmodel.cn/api/paas/v4/"
+  max_tokens: 2000
+  temperature: 0.7
+  timeout: 30
+
+# 词库设置
+dict_settings:
+  builtin_dict_path: "data/builtin_words.json"
+  import_formats: ["txt", "csv", "json"]
+  default_source: "builtin"
+
+# 导出设置
+export_settings:
+  default_format: "csv"  # csv, apkg
+  csv_delimiter: ","
+  csv_encoding: "utf-8"
+  deck_name: "英语单词卡片"
+  deck_description: "由AI生成的英语学习卡片"
+  include_media: false
+
+# 音频设置
+audio_settings:
+  enable_audio: true
+  tts_engine: "online"  # online, gtts, edge
+  voice_language: "en"
+  voice_gender: "female"
+  generate_word_audio: true
+  generate_example_audio: false
+  audio_format: "mp3"
+  cleanup_temp: true
+
+# 生成规则
+generation_rules:
+  example_count: 3
+  synonym_count: 3
+  confusable_count: 2
+  language: "zh"
+
+# 批处理设置
+batch_settings:
+  batch_size: 5
+  retry_count: 3
+  retry_delay: 1
+  rate_limit: 10
+
+# 日志设置
+logging:
+  level: "INFO"
+  file: "logs/app.log"
+  max_size: "10MB"
+  backup_count: 5

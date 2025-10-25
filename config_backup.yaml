@@ -1,0 +1,60 @@
+# Anki单词卡片生成器配置文件
+# 请在此处设置您的API密钥和其他配置
+
+# 大模型API配置
+llm_config:
+  provider: "zhipuai"  # 可选: openai, anthropic, zhipuai
+  api_key: "your-api-key-here"  # 请替换为您的实际API密钥
+  model: "glm-4"        # 智谱AI: glm-4, OpenAI: gpt-4, Anthropic: claude-3-sonnet
+  base_url: "https://open.bigmodel.cn/api/paas/v4/"  # 智谱AI的API地址
+  max_tokens: 2000
+  temperature: 0.7
+  timeout: 30
+
+dict_settings:
+  builtin_dict_path: "data/builtin_words.json"
+  import_formats: ["txt", "csv", "json"]
+  default_source: "builtin"  # builtin, user
+
+export_settings:
+  default_format: "csv"  # csv, apkg
+  csv_delimiter: ","
+  csv_encoding: "utf-8"
+  deck_name: "英语单词卡片"
+  deck_description: "由AI生成的英语学习卡片"
+  include_media: false
+
+# 音频设置
+audio_settings:
+  enable_audio: true        # 是否启用音频生成
+  tts_engine: "online"      # online, gtts, edge, oxford, merriam, cambridge
+  voice_language: "en"      # en, zh
+  voice_gender: "female"    # male, female
+  generate_word_audio: true  # 是否生成单词发音
+  generate_example_audio: false  # 是否生成例句发音（建议禁用以提高性能）
+  audio_format: "mp3"       # mp3, wav
+  cleanup_temp: true       # 是否清理临时文件
+
+  # 推荐配置：
+  # - online: 使用在线音频生成服务，无需本地文件管理
+  # - gtts: Google Text-to-Speech，需要安装 gTTS 包
+  # - edge: Microsoft Edge TTS，需要安装 edge-tts 包
+
+generation_rules:
+  example_count: 3
+  synonym_count: 3
+  confusable_count: 2
+  # tip_types已移除，现在支持任意类型的记忆技巧
+  language: "zh"  # zh for Chinese, en for English
+
+batch_settings:
+  batch_size: 5
+  retry_count: 3
+  retry_delay: 1
+  rate_limit: 10  # requests per minute
+
+logging:
+  level: "INFO"
+  file: "logs/app.log"
+  max_size: "10MB"
+  backup_count: 5

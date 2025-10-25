@@ -1,0 +1,1619 @@
+{
+  "affect": [
+    "impact",
+    "influence",
+    "effect"
+  ],
+  "effect": [
+    "result",
+    "affect",
+    "consequence"
+  ],
+  "accept": [
+    "except",
+    "receive",
+    "adopt"
+  ],
+  "except": [
+    "accept",
+    "besides",
+    "excluding"
+  ],
+  "adapt": [
+    "adjust",
+    "accommodate",
+    "adopt"
+  ],
+  "adopt": [
+    "accept",
+    "adapt",
+    "foster",
+    "embrace"
+  ],
+  "advice": [
+    "counsel",
+    "advise",
+    "recommendation"
+  ],
+  "advise": [
+    "recommend",
+    "advice",
+    "suggest"
+  ],
+  "aisle": [
+    "hallway",
+    "corridor",
+    "isle"
+  ],
+  "isle": [
+    "isle",
+    "island",
+    "aisle"
+  ],
+  "allusion": [
+    "hint",
+    "reference",
+    "illusion"
+  ],
+  "illusion": [
+    "delusion",
+    "mirage",
+    "allusion"
+  ],
+  "altar": [
+    "platform",
+    "alter",
+    "shrine"
+  ],
+  "alter": [
+    "change",
+    "modify",
+    "altar"
+  ],
+  "bare": [
+    "bear",
+    "naked",
+    "exposed"
+  ],
+  "bear": [
+    "carry",
+    "endure",
+    "bare"
+  ],
+  "board": [
+    "bored",
+    "committee",
+    "panel"
+  ],
+  "bored": [
+    "tired",
+    "board",
+    "uninterested"
+  ],
+  "brake": [
+    "break",
+    "stop",
+    "halt"
+  ],
+  "break": [
+    "brake",
+    "interrupt",
+    "shatter"
+  ],
+  "buy": [
+    "by",
+    "purchase",
+    "bye"
+  ],
+  "by": [
+    "via",
+    "near",
+    "bye",
+    "buy"
+  ],
+  "bye": [
+    "goodbye",
+    "by",
+    "buy"
+  ],
+  "capital": [
+    "money",
+    "capitol",
+    "wealth"
+  ],
+  "capitol": [
+    "building",
+    "capital",
+    "legislature"
+  ],
+  "cell": [
+    "sell",
+    "prison",
+    "chamber"
+  ],
+  "sell": [
+    "market",
+    "trade",
+    "cell"
+  ],
+  "cite": [
+    "sight",
+    "site",
+    "quote"
+  ],
+  "site": [
+    "cite",
+    "location",
+    "place"
+  ],
+  "sight": [
+    "cite",
+    "vision",
+    "view"
+  ],
+  "complement": [
+    "complete",
+    "supplement",
+    "compliment"
+  ],
+  "compliment": [
+    "flatter",
+    "praise",
+    "complement"
+  ],
+  "coarse": [
+    "rough",
+    "crude",
+    "course"
+  ],
+  "course": [
+    "path",
+    "coarse",
+    "class"
+  ],
+  "confidant": [
+    "confident",
+    "trustee",
+    "advisor"
+  ],
+  "confident": [
+    "confidant",
+    "certain",
+    "assured"
+  ],
+  "desert": [
+    "wilderness",
+    "abandon",
+    "dessert"
+  ],
+  "dessert": [
+    "pastry",
+    "sweet",
+    "desert"
+  ],
+  "discreet": [
+    "careful",
+    "prudent",
+    "discrete"
+  ],
+  "discrete": [
+    "distinct",
+    "discreet",
+    "separate"
+  ],
+  "emigrate": [
+    "relocate",
+    "immigrate",
+    "migrate"
+  ],
+  "immigrate": [
+    "emigrate",
+    "migrate",
+    "enter"
+  ],
+  "eminent": [
+    "distinguished",
+    "famous",
+    "imminent"
+  ],
+  "imminent": [
+    "eminent",
+    "pending",
+    "approaching"
+  ],
+  "everyday": [
+    "routine",
+    "daily",
+    "every day"
+  ],
+  "every day": [
+    "each day",
+    "daily",
+    "everyday"
+  ],
+  "fair": [
+    "fare",
+    "just",
+    "equitable"
+  ],
+  "fare": [
+    "price",
+    "fair",
+    "transportation"
+  ],
+  "find": [
+    "fined",
+    "locate",
+    "discover"
+  ],
+  "fined": [
+    "find",
+    "penalized",
+    "punished"
+  ],
+  "flea": [
+    "flee",
+    "pest",
+    "insect"
+  ],
+  "flee": [
+    "run",
+    "escape",
+    "flea"
+  ],
+  "grate": [
+    "shred",
+    "great",
+    "grate"
+  ],
+  "great": [
+    "grate",
+    "excellent",
+    "large"
+  ],
+  "hear": [
+    "here",
+    "perceive",
+    "listen"
+  ],
+  "here": [
+    "hear",
+    "present",
+    "there"
+  ],
+  "hole": [
+    "whole",
+    "opening",
+    "gap"
+  ],
+  "whole": [
+    "hole",
+    "complete",
+    "entire"
+  ],
+  "horde": [
+    "hoard",
+    "mob",
+    "crowd"
+  ],
+  "hoard": [
+    "horde",
+    "stash",
+    "accumulate"
+  ],
+  "its": [
+    "it's",
+    "belonging to it"
+  ],
+  "it's": [
+    "its",
+    "it has",
+    "it is"
+  ],
+  "knight": [
+    "warrior",
+    "night",
+    "chess piece"
+  ],
+  "night": [
+    "knight",
+    "evening",
+    "darkness"
+  ],
+  "loose": [
+    "tight",
+    "lose",
+    "free"
+  ],
+  "lose": [
+    "fail",
+    "loose",
+    "misplace"
+  ],
+  "lead": [
+    "metal",
+    "led",
+    "guide"
+  ],
+  "led": [
+    "lead",
+    "guided",
+    "light emitting diode"
+  ],
+  "lightning": [
+    "electricity",
+    "lightening",
+    "thunder"
+  ],
+  "lightening": [
+    "lightning",
+    "brightening",
+    "making lighter"
+  ],
+  "mail": [
+    "male",
+    "post",
+    "correspondence"
+  ],
+  "male": [
+    "man",
+    "masculine",
+    "mail"
+  ],
+  "mantle": [
+    "cloak",
+    "responsibility",
+    "mental"
+  ],
+  "mental": [
+    "mantle",
+    "psychological",
+    "intellectual"
+  ],
+  "miner": [
+    "minor",
+    "excavator",
+    "digger"
+  ],
+  "minor": [
+    "underage",
+    "miner",
+    "lesser"
+  ],
+  "no": [
+    "refusal",
+    "know",
+    "not"
+  ],
+  "know": [
+    "understand",
+    "no",
+    "recognize"
+  ],
+  "not": [
+    "no",
+    "knot",
+    "never",
+    "negation"
+  ],
+  "knot": [
+    "tangle",
+    "tie",
+    "not"
+  ],
+  "pail": [
+    "pale",
+    "container",
+    "bucket"
+  ],
+  "pale": [
+    "pail",
+    "light",
+    "faint"
+  ],
+  "pair": [
+    "pear",
+    "couple",
+    "two"
+  ],
+  "pear": [
+    "pair",
+    "fruit",
+    "shape"
+  ],
+  "patience": [
+    "endurance",
+    "tolerance",
+    "patients"
+  ],
+  "patients": [
+    "sick people",
+    "clients",
+    "patience"
+  ],
+  "peace": [
+    "harmony",
+    "tranquility",
+    "piece"
+  ],
+  "piece": [
+    "part",
+    "fragment",
+    "peace"
+  ],
+  "plain": [
+    "clear",
+    "plane",
+    "simple"
+  ],
+  "plane": [
+    "plain",
+    "aircraft",
+    "flat surface"
+  ],
+  "poor": [
+    "pour",
+    "impoverished",
+    "needy"
+  ],
+  "pour": [
+    "rain",
+    "poor",
+    "flow"
+  ],
+  "pray": [
+    "prey",
+    "worship",
+    "supplicate"
+  ],
+  "prey": [
+    "pray",
+    "hunt",
+    "victim"
+  ],
+  "principal": [
+    "main",
+    "headmaster",
+    "principle"
+  ],
+  "principle": [
+    "rule",
+    "doctrine",
+    "principal"
+  ],
+  "quart": [
+    "court",
+    "measurement",
+    "quarter"
+  ],
+  "court": [
+    "quart",
+    "law",
+    "tribunal"
+  ],
+  "rain": [
+    "rein",
+    "pour",
+    "shower",
+    "reign",
+    "precipitation"
+  ],
+  "reign": [
+    "rule",
+    "rain",
+    "dominate"
+  ],
+  "rein": [
+    "rain",
+    "strap",
+    "control"
+  ],
+  "raise": [
+    "increase",
+    "lift",
+    "raze"
+  ],
+  "raze": [
+    "demolish",
+    "raise",
+    "destroy"
+  ],
+  "rap": [
+    "wrap",
+    "strike",
+    "music"
+  ],
+  "wrap": [
+    "cover",
+    "rap",
+    "warp",
+    "enclose"
+  ],
+  "crap": [
+    "nonsense",
+    "waste",
+    "trap"
+  ],
+  "trap": [
+    "snare",
+    "crap",
+    "device"
+  ],
+  "warp": [
+    "wrap",
+    "distort",
+    "bend"
+  ],
+  "read": [
+    "scan",
+    "peruse",
+    "red"
+  ],
+  "red": [
+    "crimson",
+    "color",
+    "read"
+  ],
+  "sail": [
+    "voyage",
+    "navigate",
+    "sale"
+  ],
+  "sale": [
+    "sail",
+    "discount",
+    "transaction"
+  ],
+  "seam": [
+    "joint",
+    "seem",
+    "stitch"
+  ],
+  "seem": [
+    "appear",
+    "seam",
+    "look"
+  ],
+  "seed": [
+    "spore",
+    "grain",
+    "cede"
+  ],
+  "cede": [
+    "seed",
+    "surrender",
+    "yield"
+  ],
+  "than": [
+    "rather than",
+    "compared to",
+    "then"
+  ],
+  "then": [
+    "at that time",
+    "than",
+    "next"
+  ],
+  "their": [
+    "belonging to them",
+    "there",
+    "they're"
+  ],
+  "there": [
+    "in that place",
+    "their",
+    "there",
+    "here",
+    "they're"
+  ],
+  "they're": [
+    "their",
+    "there",
+    "they are"
+  ],
+  "through": [
+    "across",
+    "threw",
+    "via"
+  ],
+  "threw": [
+    "through",
+    "cast",
+    "pitched"
+  ],
+  "throne": [
+    "thrown",
+    "chair",
+    "seat of power"
+  ],
+  "thrown": [
+    "throne",
+    "discarded",
+    "cast"
+  ],
+  "to": [
+    "toward",
+    "too",
+    "two"
+  ],
+  "too": [
+    "excessively",
+    "also",
+    "to",
+    "two"
+  ],
+  "two": [
+    "pair",
+    "to",
+    "too"
+  ],
+  "vale": [
+    "valley",
+    "dingle",
+    "veil"
+  ],
+  "veil": [
+    "mask",
+    "vale",
+    "cover"
+  ],
+  "wait": [
+    "remain",
+    "stay",
+    "weight"
+  ],
+  "weight": [
+    "wait",
+    "mass",
+    "heaviness"
+  ],
+  "waive": [
+    "forgo",
+    "wave",
+    "relinquish"
+  ],
+  "wave": [
+    "waive",
+    "undulate",
+    "gesture"
+  ],
+  "weak": [
+    "feeble",
+    "frail",
+    "week"
+  ],
+  "week": [
+    "seven days",
+    "weak",
+    "period"
+  ],
+  "weather": [
+    "whether",
+    "forecast",
+    "climate"
+  ],
+  "whether": [
+    "if",
+    "weather",
+    "either"
+  ],
+  "which": [
+    "witch",
+    "that",
+    "what"
+  ],
+  "witch": [
+    "hag",
+    "sorceress",
+    "which"
+  ],
+  "who's": [
+    "whose",
+    "who has",
+    "who is"
+  ],
+  "whose": [
+    "who's",
+    "belonging to whom",
+    "of whom"
+  ],
+  "wood": [
+    "forest",
+    "would",
+    "timber"
+  ],
+  "would": [
+    "conditional",
+    "will",
+    "wood"
+  ],
+  "yoke": [
+    "harness",
+    "yolk",
+    "burden"
+  ],
+  "yolk": [
+    "egg yellow",
+    "yoke",
+    "center"
+  ],
+  "disability": [
+    "inability",
+    "handicap",
+    "impairment"
+  ],
+  "liability": [
+    "responsibility",
+    "debt",
+    "obligation"
+  ],
+  "ability": [
+    "capability",
+    "skill",
+    "talent"
+  ],
+  "capable": [
+    "able",
+    "competent",
+    "skilled"
+  ],
+  "unable": [
+    "incapable",
+    "incompetent",
+    "powerless"
+  ],
+  "impact": [
+    "affect"
+  ],
+  "influence": [
+    "affect"
+  ],
+  "result": [
+    "effect"
+  ],
+  "consequence": [
+    "effect"
+  ],
+  "receive": [
+    "accept"
+  ],
+  "besides": [
+    "except"
+  ],
+  "excluding": [
+    "except"
+  ],
+  "adjust": [
+    "adapt"
+  ],
+  "accommodate": [
+    "adapt"
+  ],
+  "foster": [
+    "adopt"
+  ],
+  "embrace": [
+    "adopt"
+  ],
+  "counsel": [
+    "advice"
+  ],
+  "recommendation": [
+    "advice"
+  ],
+  "recommend": [
+    "advise"
+  ],
+  "suggest": [
+    "advise"
+  ],
+  "hallway": [
+    "aisle"
+  ],
+  "corridor": [
+    "aisle"
+  ],
+  "island": [
+    "isle"
+  ],
+  "reference": [
+    "allusion"
+  ],
+  "hint": [
+    "allusion"
+  ],
+  "delusion": [
+    "illusion"
+  ],
+  "mirage": [
+    "illusion"
+  ],
+  "shrine": [
+    "altar"
+  ],
+  "platform": [
+    "altar"
+  ],
+  "change": [
+    "alter"
+  ],
+  "modify": [
+    "alter"
+  ],
+  "naked": [
+    "bare"
+  ],
+  "exposed": [
+    "bare"
+  ],
+  "endure": [
+    "bear"
+  ],
+  "carry": [
+    "bear"
+  ],
+  "panel": [
+    "board"
+  ],
+  "committee": [
+    "board"
+  ],
+  "tired": [
+    "bored"
+  ],
+  "uninterested": [
+    "bored"
+  ],
+  "stop": [
+    "brake"
+  ],
+  "halt": [
+    "brake"
+  ],
+  "shatter": [
+    "break"
+  ],
+  "interrupt": [
+    "break"
+  ],
+  "purchase": [
+    "buy"
+  ],
+  "near": [
+    "by"
+  ],
+  "via": [
+    "by",
+    "through"
+  ],
+  "goodbye": [
+    "bye"
+  ],
+  "money": [
+    "capital"
+  ],
+  "wealth": [
+    "capital"
+  ],
+  "building": [
+    "capitol"
+  ],
+  "legislature": [
+    "capitol"
+  ],
+  "prison": [
+    "cell"
+  ],
+  "chamber": [
+    "cell"
+  ],
+  "market": [
+    "sell"
+  ],
+  "trade": [
+    "sell"
+  ],
+  "quote": [
+    "cite"
+  ],
+  "location": [
+    "site"
+  ],
+  "place": [
+    "site"
+  ],
+  "vision": [
+    "sight"
+  ],
+  "view": [
+    "sight"
+  ],
+  "supplement": [
+    "complement"
+  ],
+  "complete": [
+    "complement",
+    "whole"
+  ],
+  "praise": [
+    "compliment"
+  ],
+  "flatter": [
+    "compliment"
+  ],
+  "rough": [
+    "coarse"
+  ],
+  "crude": [
+    "coarse"
+  ],
+  "path": [
+    "course"
+  ],
+  "class": [
+    "course"
+  ],
+  "advisor": [
+    "confidant"
+  ],
+  "trustee": [
+    "confidant"
+  ],
+  "assured": [
+    "confident"
+  ],
+  "certain": [
+    "confident"
+  ],
+  "abandon": [
+    "desert"
+  ],
+  "wilderness": [
+    "desert"
+  ],
+  "sweet": [
+    "dessert"
+  ],
+  "pastry": [
+    "dessert"
+  ],
+  "careful": [
+    "discreet"
+  ],
+  "prudent": [
+    "discreet"
+  ],
+  "separate": [
+    "discrete"
+  ],
+  "distinct": [
+    "discrete"
+  ],
+  "migrate": [
+    "emigrate",
+    "immigrate"
+  ],
+  "relocate": [
+    "emigrate"
+  ],
+  "enter": [
+    "immigrate"
+  ],
+  "famous": [
+    "eminent"
+  ],
+  "distinguished": [
+    "eminent"
+  ],
+  "pending": [
+    "imminent"
+  ],
+  "approaching": [
+    "imminent"
+  ],
+  "daily": [
+    "everyday",
+    "every day"
+  ],
+  "routine": [
+    "everyday"
+  ],
+  "each day": [
+    "every day"
+  ],
+  "just": [
+    "fair"
+  ],
+  "equitable": [
+    "fair"
+  ],
+  "price": [
+    "fare"
+  ],
+  "transportation": [
+    "fare"
+  ],
+  "discover": [
+    "find"
+  ],
+  "locate": [
+    "find"
+  ],
+  "penalized": [
+    "fined"
+  ],
+  "punished": [
+    "fined"
+  ],
+  "insect": [
+    "flea"
+  ],
+  "pest": [
+    "flea"
+  ],
+  "escape": [
+    "flee"
+  ],
+  "run": [
+    "flee"
+  ],
+  "shred": [
+    "grate"
+  ],
+  "excellent": [
+    "great"
+  ],
+  "large": [
+    "great"
+  ],
+  "listen": [
+    "hear"
+  ],
+  "perceive": [
+    "hear"
+  ],
+  "present": [
+    "here"
+  ],
+  "opening": [
+    "hole"
+  ],
+  "gap": [
+    "hole"
+  ],
+  "entire": [
+    "whole"
+  ],
+  "crowd": [
+    "horde"
+  ],
+  "mob": [
+    "horde"
+  ],
+  "accumulate": [
+    "hoard"
+  ],
+  "stash": [
+    "hoard"
+  ],
+  "belonging to it": [
+    "its"
+  ],
+  "it is": [
+    "it's"
+  ],
+  "it has": [
+    "it's"
+  ],
+  "warrior": [
+    "knight"
+  ],
+  "chess piece": [
+    "knight"
+  ],
+  "darkness": [
+    "night"
+  ],
+  "evening": [
+    "night"
+  ],
+  "tight": [
+    "loose"
+  ],
+  "free": [
+    "loose"
+  ],
+  "misplace": [
+    "lose"
+  ],
+  "fail": [
+    "lose"
+  ],
+  "guide": [
+    "lead"
+  ],
+  "metal": [
+    "lead"
+  ],
+  "guided": [
+    "led"
+  ],
+  "light emitting diode": [
+    "led"
+  ],
+  "electricity": [
+    "lightning"
+  ],
+  "thunder": [
+    "lightning"
+  ],
+  "brightening": [
+    "lightening"
+  ],
+  "making lighter": [
+    "lightening"
+  ],
+  "post": [
+    "mail"
+  ],
+  "correspondence": [
+    "mail"
+  ],
+  "masculine": [
+    "male"
+  ],
+  "man": [
+    "male"
+  ],
+  "cloak": [
+    "mantle"
+  ],
+  "responsibility": [
+    "mantle",
+    "liability"
+  ],
+  "intellectual": [
+    "mental"
+  ],
+  "psychological": [
+    "mental"
+  ],
+  "excavator": [
+    "miner"
+  ],
+  "digger": [
+    "miner"
+  ],
+  "underage": [
+    "minor"
+  ],
+  "lesser": [
+    "minor"
+  ],
+  "refusal": [
+    "no"
+  ],
+  "understand": [
+    "know"
+  ],
+  "recognize": [
+    "know"
+  ],
+  "negation": [
+    "not"
+  ],
+  "never": [
+    "not"
+  ],
+  "tie": [
+    "knot"
+  ],
+  "tangle": [
+    "knot"
+  ],
+  "bucket": [
+    "pail"
+  ],
+  "container": [
+    "pail"
+  ],
+  "light": [
+    "pale"
+  ],
+  "faint": [
+    "pale"
+  ],
+  "couple": [
+    "pair"
+  ],
+  "fruit": [
+    "pear"
+  ],
+  "shape": [
+    "pear"
+  ],
+  "tolerance": [
+    "patience"
+  ],
+  "endurance": [
+    "patience"
+  ],
+  "sick people": [
+    "patients"
+  ],
+  "clients": [
+    "patients"
+  ],
+  "tranquility": [
+    "peace"
+  ],
+  "harmony": [
+    "peace"
+  ],
+  "part": [
+    "piece"
+  ],
+  "fragment": [
+    "piece"
+  ],
+  "simple": [
+    "plain"
+  ],
+  "clear": [
+    "plain"
+  ],
+  "aircraft": [
+    "plane"
+  ],
+  "flat surface": [
+    "plane"
+  ],
+  "impoverished": [
+    "poor"
+  ],
+  "needy": [
+    "poor"
+  ],
+  "flow": [
+    "pour"
+  ],
+  "supplicate": [
+    "pray"
+  ],
+  "worship": [
+    "pray"
+  ],
+  "victim": [
+    "prey"
+  ],
+  "hunt": [
+    "prey"
+  ],
+  "main": [
+    "principal"
+  ],
+  "headmaster": [
+    "principal"
+  ],
+  "rule": [
+    "principle",
+    "reign"
+  ],
+  "doctrine": [
+    "principle"
+  ],
+  "measurement": [
+    "quart"
+  ],
+  "quarter": [
+    "quart"
+  ],
+  "law": [
+    "court"
+  ],
+  "tribunal": [
+    "court"
+  ],
+  "precipitation": [
+    "rain"
+  ],
+  "shower": [
+    "rain"
+  ],
+  "dominate": [
+    "reign"
+  ],
+  "strap": [
+    "rein"
+  ],
+  "control": [
+    "rein"
+  ],
+  "lift": [
+    "raise"
+  ],
+  "increase": [
+    "raise"
+  ],
+  "demolish": [
+    "raze"
+  ],
+  "destroy": [
+    "raze"
+  ],
+  "strike": [
+    "rap"
+  ],
+  "music": [
+    "rap"
+  ],
+  "cover": [
+    "wrap",
+    "veil"
+  ],
+  "enclose": [
+    "wrap"
+  ],
+  "nonsense": [
+    "crap"
+  ],
+  "waste": [
+    "crap"
+  ],
+  "snare": [
+    "trap"
+  ],
+  "device": [
+    "trap"
+  ],
+  "distort": [
+    "warp"
+  ],
+  "bend": [
+    "warp"
+  ],
+  "peruse": [
+    "read"
+  ],
+  "scan": [
+    "read"
+  ],
+  "color": [
+    "red"
+  ],
+  "crimson": [
+    "red"
+  ],
+  "navigate": [
+    "sail"
+  ],
+  "voyage": [
+    "sail"
+  ],
+  "transaction": [
+    "sale"
+  ],
+  "discount": [
+    "sale"
+  ],
+  "stitch": [
+    "seam"
+  ],
+  "joint": [
+    "seam"
+  ],
+  "appear": [
+    "seem"
+  ],
+  "look": [
+    "seem"
+  ],
+  "spore": [
+    "seed"
+  ],
+  "grain": [
+    "seed"
+  ],
+  "yield": [
+    "cede"
+  ],
+  "surrender": [
+    "cede"
+  ],
+  "compared to": [
+    "than"
+  ],
+  "rather than": [
+    "than"
+  ],
+  "at that time": [
+    "then"
+  ],
+  "next": [
+    "then"
+  ],
+  "belonging to them": [
+    "their"
+  ],
+  "in that place": [
+    "there"
+  ],
+  "they are": [
+    "they're"
+  ],
+  "across": [
+    "through"
+  ],
+  "cast": [
+    "threw",
+    "thrown"
+  ],
+  "pitched": [
+    "threw"
+  ],
+  "seat of power": [
+    "throne"
+  ],
+  "chair": [
+    "throne"
+  ],
+  "discarded": [
+    "thrown"
+  ],
+  "toward": [
+    "to"
+  ],
+  "also": [
+    "too"
+  ],
+  "excessively": [
+    "too"
+  ],
+  "valley": [
+    "vale"
+  ],
+  "dingle": [
+    "vale"
+  ],
+  "mask": [
+    "veil"
+  ],
+  "remain": [
+    "wait"
+  ],
+  "stay": [
+    "wait"
+  ],
+  "heaviness": [
+    "weight"
+  ],
+  "mass": [
+    "weight"
+  ],
+  "relinquish": [
+    "waive"
+  ],
+  "forgo": [
+    "waive"
+  ],
+  "undulate": [
+    "wave"
+  ],
+  "gesture": [
+    "wave"
+  ],
+  "feeble": [
+    "weak"
+  ],
+  "frail": [
+    "weak"
+  ],
+  "seven days": [
+    "week"
+  ],
+  "period": [
+    "week"
+  ],
+  "climate": [
+    "weather"
+  ],
+  "forecast": [
+    "weather"
+  ],
+  "if": [
+    "whether"
+  ],
+  "either": [
+    "whether"
+  ],
+  "what": [
+    "which"
+  ],
+  "that": [
+    "which"
+  ],
+  "sorceress": [
+    "witch"
+  ],
+  "hag": [
+    "witch"
+  ],
+  "who is": [
+    "who's"
+  ],
+  "who has": [
+    "who's"
+  ],
+  "of whom": [
+    "whose"
+  ],
+  "belonging to whom": [
+    "whose"
+  ],
+  "timber": [
+    "wood"
+  ],
+  "forest": [
+    "wood"
+  ],
+  "will": [
+    "would"
+  ],
+  "conditional": [
+    "would"
+  ],
+  "harness": [
+    "yoke"
+  ],
+  "burden": [
+    "yoke"
+  ],
+  "egg yellow": [
+    "yolk"
+  ],
+  "center": [
+    "yolk"
+  ],
+  "inability": [
+    "disability"
+  ],
+  "handicap": [
+    "disability"
+  ],
+  "impairment": [
+    "disability"
+  ],
+  "debt": [
+    "liability"
+  ],
+  "obligation": [
+    "liability"
+  ],
+  "capability": [
+    "ability"
+  ],
+  "skill": [
+    "ability"
+  ],
+  "talent": [
+    "ability"
+  ],
+  "able": [
+    "capable"
+  ],
+  "competent": [
+    "capable"
+  ],
+  "skilled": [
+    "capable"
+  ],
+  "incapable": [
+    "unable"
+  ],
+  "incompetent": [
+    "unable"
+  ],
+  "powerless": [
+    "unable"
+  ]
+}

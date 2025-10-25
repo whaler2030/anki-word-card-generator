@@ -1,0 +1,112 @@
+{
+  "words": [
+    {
+      "word": "abandon",
+      "difficulty": "medium",
+      "category": "情感",
+      "frequency": "common"
+    },
+    {
+      "word": "ability",
+      "difficulty": "easy",
+      "category": "能力",
+      "frequency": "common"
+    },
+    {
+      "word": "absent",
+      "difficulty": "easy",
+      "category": "状态",
+      "frequency": "common"
+    },
+    {
+      "word": "absolute",
+      "difficulty": "medium",
+      "category": "程度",
+      "frequency": "common"
+    },
+    {
+      "word": "abstract",
+      "difficulty": "hard",
+      "category": "概念",
+      "frequency": "less_common"
+    },
+    {
+      "word": "academic",
+      "difficulty": "medium",
+      "category": "教育",
+      "frequency": "common"
+    },
+    {
+      "word": "accept",
+      "difficulty": "easy",
+      "category": "行为",
+      "frequency": "common"
+    },
+    {
+      "word": "access",
+      "difficulty": "medium",
+      "category": "行为",
+      "frequency": "common"
+    },
+    {
+      "word": "accident",
+      "difficulty": "easy",
+      "category": "事件",
+      "frequency": "common"
+    },
+    {
+      "word": "accomplish",
+      "difficulty": "medium",
+      "category": "成就",
+      "frequency": "common"
+    }
+  ],
+  "categories": {
+    "情感": [
+      "abandon",
+      "love",
+      "hate",
+      "fear"
+    ],
+    "能力": [
+      "ability",
+      "skill",
+      "talent"
+    ],
+    "状态": [
+      "absent",
+      "present",
+      "active"
+    ],
+    "程度": [
+      "absolute",
+      "relative",
+      "partial"
+    ],
+    "概念": [
+      "abstract",
+      "concrete",
+      "theory"
+    ],
+    "教育": [
+      "academic",
+      "education",
+      "learning"
+    ],
+    "行为": [
+      "accept",
+      "access",
+      "accomplish"
+    ],
+    "事件": [
+      "accident",
+      "event",
+      "incident"
+    ],
+    "成就": [
+      "accomplish",
+      "achieve",
+      "success"
+    ]
+  }
+}

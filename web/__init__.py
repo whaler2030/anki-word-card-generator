@@ -1,0 +1,1 @@
+# Web module for Anki Word Card Generator

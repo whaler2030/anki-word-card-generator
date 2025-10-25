@@ -1,0 +1,372 @@
+/* Anki单词卡片生成器 - 自定义样式 */
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* 导航栏样式 */
+.navbar {
+    box-shadow: var(--box-shadow);
+    padding: 0.5rem 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.navbar-brand i {
+    margin-right: 0.5rem;
+}
+
+/* 卡片样式 */
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.card-header {
+    border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+    font-weight: 600;
+}
+
+/* 按钮样式增强 */
+.btn {
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0b5ed7 0%, #0a4cad 100%);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #198754 0%, #146c43 100%);
+    border: none;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #146c43 0%, #0f5132 100%);
+}
+
+/* 文件上传区域 */
+#upload-area {
+    border: 2px dashed #dee2e6;
+    border-radius: var(--border-radius);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#upload-area:hover {
+    border-color: var(--primary-color);
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+#upload-area.dragover {
+    border-color: var(--success-color);
+    background-color: rgba(25, 135, 84, 0.1);
+}
+
+/* 进度条样式 */
+.progress {
+    background-color: #e9ecef;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+    transition: width 0.3s ease;
+}
+
+/* 单词列表样式 */
+#word-list {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.word-item {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    margin: 0.25rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    animation: slideIn 0.3s ease;
+}
+
+.word-item:hover {
+    background-color: #0b5ed7;
+    transform: scale(1.05);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 卡片显示样式 */
+.generated-card {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.5s ease;
+}
+
+.generated-card:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.generated-card .word-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.generated-card .phonetic {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.generated-card .meaning {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.generated-card .memory-tip {
+    background-color: #e3f2fd;
+    border-left: 4px solid var(--info-color);
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.generated-card .examples {
+    margin-bottom: 1rem;
+}
+
+.generated-card .examples .example {
+    background-color: #f8f9fa;
+    border-left: 3px solid var(--success-color);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.generated-card .synonyms,
+.generated-card .confusables {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.generated-card .tag {
+    background-color: var(--info-color);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.generated-card .confusables .tag {
+    background-color: var(--warning-color);
+    color: var(--dark-color);
+}
+
+/* 统计数字样式 */
+.display-4 {
+    font-weight: bold;
+    background: linear-gradient(135deg, var(--success-color), var(--danger-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-success .display-4 {
+    background: linear-gradient(135deg, var(--success-color), #20c997);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-danger .display-4 {
+    background: linear-gradient(135deg, var(--danger-color), #fd7e14);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    #word-list {
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* 加载动画 */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 自定义滚动条 */
+#word-list::-webkit-scrollbar,
+#generated-cards::-webkit-scrollbar {
+    width: 6px;
+}
+
+#word-list::-webkit-scrollbar-track,
+#generated-cards::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+#word-list::-webkit-scrollbar-thumb,
+#generated-cards::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+#word-list::-webkit-scrollbar-thumb:hover,
+#generated-cards::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* 工具提示样式 */
+.tooltip {
+    font-size: 0.875rem;
+}
+
+.tooltip-inner {
+    background-color: var(--dark-color);
+    color: white;
+    border-radius: var(--border-radius);
+}
+
+/* 警告和提示样式 */
+.alert {
+    border: none;
+    border-radius: var(--border-radius);
+    border-left: 4px solid transparent;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    border-left-color: var(--success-color);
+    color: #0f5132;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-left-color: var(--danger-color);
+    color: #721c24;
+}
+
+.alert-info {
+    background-color: #cff4fc;
+    border-left-color: var(--info-color);
+    color: #055160;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border-left-color: var(--warning-color);
+    color: #664d03;
+}
+
+/* 页脚样式 */
+footer {
+    margin-top: auto;
+    border-top: 1px solid #dee2e6;
+}

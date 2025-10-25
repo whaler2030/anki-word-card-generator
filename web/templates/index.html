@@ -1,0 +1,270 @@
+{% extends "base.html" %}
+
+{% block title %}Anki单词卡片生成器 - 首页{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- 左侧：单词选择 -->
+    <div class="col-lg-6">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-list-stars"></i> 选择单词</h5>
+            </div>
+            <div class="card-body">
+                <!-- 标签页导航 -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#builtin-tab">
+                            <i class="bi bi-book"></i> 内置词库
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#upload-tab">
+                            <i class="bi bi-upload"></i> 上传词库
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#manual-tab">
+                            <i class="bi bi-pencil-square"></i> 手动输入
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- 标签页内容 -->
+                <div class="tab-content mt-3">
+                    <!-- 内置词库标签页 -->
+                    <div class="tab-pane fade show active" id="builtin-tab">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <label class="form-label">选择方式</label>
+                                <select class="form-select" id="selection-type">
+                                    <option value="random">随机选择</option>
+                                    <option value="category">按分类选择</option>
+                                    <option value="difficulty">按难度选择</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">数量</label>
+                                <input type="number" class="form-control" id="word-count" value="10" min="1" max="50">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">分类/难度</label>
+                                <select class="form-select" id="category-difficulty">
+                                    <option value="">全部</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary w-100 mt-3" id="load-builtin-words">
+                            <i class="bi bi-arrow-right-circle"></i> 加载单词
+                        </button>
+                    </div>
+
+                    <!-- 上传词库标签页 -->
+                    <div class="tab-pane fade" id="upload-tab">
+                        <div class="border rounded p-3 text-center" id="upload-area">
+                            <i class="bi bi-cloud-upload fs-1 text-muted"></i>
+                            <p class="text-muted mt-2 mb-3">拖拽文件到此处或点击选择</p>
+                            <input type="file" class="form-control" id="file-input" accept=".txt,.csv,.json" style="display: none;">
+                            <button class="btn btn-outline-primary" id="browse-btn">
+                                <i class="bi bi-folder2-open"></i> 浏览文件
+                            </button>
+                            <div class="form-text text-start mt-2">
+                                支持格式：TXT, CSV, JSON（最大16MB）
+                            </div>
+                        </div>
+                        <div id="file-preview" class="mt-3" style="display: none;"></div>
+                    </div>
+
+                    <!-- 手动输入标签页 -->
+                    <div class="tab-pane fade" id="manual-tab">
+                        <label class="form-label">输入单词（每行一个）</label>
+                        <textarea class="form-control" id="manual-words" rows="6"
+                                  placeholder="apple&#10;banana&#10;orange&#10;..."></textarea>
+                        <div class="form-text">支持英文单词，每行一个，最多50个</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 单词列表 -->
+        <div class="card">
+            <div class="card-header">
+                <h6 class="mb-0"><i class="bi bi-list-ul"></i> 待生成单词列表</h6>
+            </div>
+            <div class="card-body">
+                <div id="word-list" class="border rounded p-3" style="min-height: 200px; max-height: 300px; overflow-y: auto;">
+                    <p class="text-muted text-center">请先选择单词</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <span class="text-muted">
+                        已选择: <span id="selected-count">0</span> 个单词
+                    </span>
+                    <div>
+                        <button class="btn btn-outline-secondary btn-sm" id="clear-list">
+                            <i class="bi bi-trash"></i> 清空
+                        </button>
+                        <button class="btn btn-warning btn-sm" id="preview-btn">
+                            <i class="bi bi-eye"></i> 预览
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧：生成和导出 -->
+    <div class="col-lg-6">
+        <!-- 配置信息 -->
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                <h6 class="mb-0"><i class="bi bi-gear"></i> 配置信息</h6>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-6 border-end">
+                        <small class="text-muted">模型提供商</small>
+                        <div class="fw-bold" id="provider-display">-</div>
+                    </div>
+                    <div class="col-6">
+                        <small class="text-muted">模型名称</small>
+                        <div class="fw-bold" id="model-display">-</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-4">
+                        <small class="text-muted">例句数量</small>
+                        <div class="fw-bold" id="examples-count">3</div>
+                    </div>
+                    <div class="col-4">
+                        <small class="text-muted">同义词数量</small>
+                        <div class="fw-bold" id="synonyms-count">3</div>
+                    </div>
+                    <div class="col-4">
+                        <small class="text-muted">记忆技巧类型</small>
+                        <div class="fw-bold small" id="tip-types">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 生成控制 -->
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h6 class="mb-0"><i class="bi bi-cpu"></i> 生成控制</h6>
+            </div>
+            <div class="card-body text-center">
+                <button class="btn btn-success btn-lg w-100" id="generate-btn">
+                    <i class="bi bi-play-circle"></i> 开始生成
+                </button>
+                <div id="progress-container" class="mt-3" style="display: none;">
+                    <div class="progress" style="height: 25px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                             id="progress-bar" role="progressbar" style="width: 0%;">
+                            0%
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <small class="text-muted">
+                            进度: <span id="progress-text">0/0</span>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 导出选项 -->
+        <div class="card mb-4">
+            <div class="card-header bg-warning text-white">
+                <h6 class="mb-0"><i class="bi bi-download"></i> 导出选项</h6>
+            </div>
+            <div class="card-body">
+                <div class="row g-2">
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-primary w-100" id="export-csv">
+                            <i class="bi bi-file-earmark-text"></i><br>
+                            <small>CSV格式</small>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-success w-100" id="export-apkg">
+                            <i class="bi bi-file-earmark-zip"></i><br>
+                            <small>APKG格式</small>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-info w-100" id="export-study">
+                            <i class="bi bi-book"></i><br>
+                            <small>学习指南</small>
+                        </button>
+                    </div>
+                </div>
+                <div class="alert alert-info mt-3 mb-0">
+                    <i class="bi bi-info-circle"></i>
+                    <small>请先生成单词卡片，然后选择导出格式</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- 生成结果 -->
+        <div class="card" id="results-card" style="display: none;">
+            <div class="card-header bg-secondary text-white">
+                <h6 class="mb-0"><i class="bi bi-clipboard-check"></i> 生成结果</h6>
+            </div>
+            <div class="card-body">
+                <div class="row text-center mb-3">
+                    <div class="col-md-6">
+                        <div class="display-4 text-success" id="success-count">0</div>
+                        <small class="text-muted">成功生成</small>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="display-4 text-danger" id="failed-count">0</div>
+                        <small class="text-muted">生成失败</small>
+                    </div>
+                </div>
+                <div id="generated-cards" class="border rounded p-3" style="max-height: 300px; overflow-y: auto;">
+                    <!-- 生成的卡片将显示在这里 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 预览模态框 -->
+<div class="modal fade" id="preview-modal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="bi bi-eye"></i> 生成预览
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="preview-content">
+                <!-- 预览内容将显示在这里 -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="confirm-generate">
+                    <i class="bi bi-check-circle"></i> 确认生成
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// 全局变量
+let selectedWords = [];
+let generatedCards = [];
+
+// 页面加载完成后初始化
+document.addEventListener('DOMContentLoaded', function() {
+    initializeApp();
+    loadConfig();
+    loadStats();
+});
+</script>
+{% endblock %}
